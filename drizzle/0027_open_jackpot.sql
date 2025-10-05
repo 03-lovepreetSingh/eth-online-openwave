@@ -1,0 +1,2 @@
+ALTER TABLE "project_certificates" ADD COLUMN "issued_to" varchar(256);--> statement-breakpoint
+ALTER TABLE "project_certificates" ADD CONSTRAINT "project_certificates_issued_to_users_id_fk" FOREIGN KEY ("issued_to") REFERENCES "public"."users"("id") ON DELETE no action ON UPDATE no action;

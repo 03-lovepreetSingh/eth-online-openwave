@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "chain": {
+    "name": "U2U Subnet",
+    "id": 1,
+    "vm": "SubnetEVM",
+    "genesis": {
+      "timestamp": "2023-10-01T00:00:00Z",
+      "initialState": {
+        "balances": {
+          "0xYourAddress": 1000000000000000000
+        }
+      },
+      "config": {
+        "chainId": 1,
+        "gasLimit": 3000000,
+        "gasPrice": 1000000000
+      }
+    },
+    "validators": [
+      {
+        "address": "0xYourValidatorAddress",
+        "weight": 100
+      }
+    ]
+  }
+}

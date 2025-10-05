@@ -1,0 +1,1 @@
+ALTER TABLE "project_embeddings" DROP COLUMN "embedding";

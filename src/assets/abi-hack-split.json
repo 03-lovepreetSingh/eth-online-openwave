@@ -1,0 +1,112 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "bytes32",
+				"name": "projectId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "totalAmount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "contributorShare",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "maintainerShare",
+				"type": "uint256"
+			}
+		],
+		"name": "PaymentSplit",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "totalAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "contributorVotes",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "maintainerVotes",
+				"type": "uint256"
+			}
+		],
+		"name": "calculateSplit",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "totalAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "contributorShare",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maintainerShare",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct HackathonSplit.Split",
+				"name": "split",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "projectId",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address[]",
+				"name": "contributors",
+				"type": "address[]"
+			},
+			{
+				"internalType": "address[]",
+				"name": "maintainers",
+				"type": "address[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "contributorShares",
+				"type": "uint256[]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "maintainerShares",
+				"type": "uint256[]"
+			}
+		],
+		"name": "executeSplit",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	}
+]

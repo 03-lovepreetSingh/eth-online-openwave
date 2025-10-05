@@ -1,0 +1,13 @@
+{
+  "vm": "SubnetEVM",
+  "subnetId": 1,
+  "tokenSymbol": "U2U",
+  "gasFee": {
+    "lowDiskUse": true,
+    "lowThroughput": true
+  },
+  "airdrop": {
+    "enabled": false,
+    "amount": 0
+  }
+}
