@@ -1035,7 +1035,7 @@
                                   <div className="flex flex-col sm:flex-row sm:justify-between gap-2 text-sm">
                                     
                                     <div className="text-center sm:text-right flex">
-                                      <img src="/U2U_small.png" alt="U2U Logo" width={24} height={24} className="mr-2" />
+                                      <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png" alt="U2U Logo" width={24} height={24} className="mr-2" />
                                       <div className="dark:text-neutral-300 text-xl text-neutral-900 font-bold">
                                         {issue.rewardAmount} 
                                       </div>

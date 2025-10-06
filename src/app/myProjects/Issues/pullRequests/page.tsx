@@ -217,7 +217,7 @@ export default function IssuePullRequestsPage() {
 
                       <div className="flex gap-1 text-neutral-300 font-bold text-xl">
                         <img
-                          src={`https://build.U2U.network/favicon.ico`}
+                          src={`https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png`}
                           alt="U2U"
                           width={20}
                           height={20}

@@ -242,6 +242,7 @@ export default function PullRequestDetails() {
     contributorData();
   }, [repoData]);
   const transact = async () => {
+    console.log("contributer data", contributorData);
     if (!isConnected || !address) {
       return alert("Please connect your wallet first.");
     }

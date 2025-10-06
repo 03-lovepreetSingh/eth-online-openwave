@@ -518,8 +518,8 @@ export default function MultiStepSignup() {
             className="h-2 -mt-4 bg-neutral-200/50 dark:bg-neutral-700/50"
           />
           <div className="flex min-h-screen items-center justify-center ">
-            <div className="overU2U-y-auto max-w-5xl custom-scrollbar w-full bg-neutral-50 dark:bg-neutral-900  backdrop-blur-sm ">
-              <div className="relative overU2U-hidden">
+            <div className="overflow-y-auto max-w-5xl custom-scrollbar w-full bg-neutral-50 dark:bg-neutral-900  backdrop-blur-sm ">
+              <div className="relative overflow-hidden">
                 <div className="relative z-10">{/* Step Indicators */}</div>
               </div>
               <div className="p-8">
@@ -531,17 +531,17 @@ export default function MultiStepSignup() {
                         <div className="w-16 h-16 my-auto bg-gradient-to-br from-neutral-200/20 to-neutral-300/20 rounded-full flex items-center justify-center border border-neutral-300/30 dark:from-neutral-800/20 dark:to-neutral-700/20 dark:border-neutral-700/30">
                           <Shield className="w-8 h-8 text-neutral-700 dark:text-neutral-300" />
                         </div>
-                        <div className="w-[100%_-_64px]">
+                        <div className="flex-1">
                           <h3 className="text-xl font-bold text-neutral-900 dark:text-white">
                             Terms and Conditions
                           </h3>
-                          <p className="text-neutral-500 text-sm max-w-60 mx-auto dark:text-neutral-400">
+                          <p className="text-neutral-500 text-sm dark:text-neutral-400">
                             Please review and accept our terms to continue with
                             your openwave journey
                           </p>
                         </div>
                       </div>
-                      <div className="bg-neutral-100/50 rounded-xl p-6 border border-neutral-300/30 max-h-80 overU2U-y-auto custom-scrollbar dark:bg-gradient-to-br dark:from-neutral-800/50 dark:to-neutral-800/50 dark:border-neutral-700/30">
+                      <div className="bg-neutral-100/50 rounded-xl p-6 border border-neutral-300/30 max-h-96 overflow-y-auto custom-scrollbar dark:bg-gradient-to-br dark:from-neutral-800/50 dark:to-neutral-800/50 dark:border-neutral-700/30">
                         <div className="text-sm text-neutral-700 space-y-6 dark:text-neutral-300">
                           <div>
                             <h4 className="font-bold text-neutral-900 text-lg mb-3 flex items-center gap-2 dark:text-white">
@@ -574,7 +574,7 @@ export default function MultiStepSignup() {
                                   className="flex items-start gap-3"
                                 >
                                   <div className="w-1.5 h-1.5 bg-neutral-700 rounded-full mt-2 flex-shrink-0 dark:bg-neutral-300" />
-                                  <span>{term}</span>
+                                  <span className="flex-1">{term}</span>
                                 </li>
                               ))}
                             </ul>
@@ -602,18 +602,18 @@ export default function MultiStepSignup() {
                           </div>
                         </div>
                       </div>
-                      <div className="flex items-center space-x-4 p-4 bg-neutral-100/10 rounded-lg border border-neutral-300/20 dark:bg-gradient-to-r dark:from-neutral-800/10 dark:to-neutral-700/10 dark:border-neutral-700/20">
+                      <div className="flex items-start space-x-4 p-4 bg-neutral-100/10 rounded-lg border border-neutral-300/20 dark:bg-gradient-to-r dark:from-neutral-800/10 dark:to-neutral-700/10 dark:border-neutral-700/20">
                         <Checkbox
                           id="terms"
                           checked={formData.termsAccepted}
                           onCheckedChange={(checked) =>
                             updateFormData("termsAccepted", checked)
                           }
-                          className="border-neutral-700 data-[state=checked]:bg-neutral-800 dark:border-neutral-300 dark:data-[state=checked]:bg-neutral-200"
+                          className="border-neutral-700 data-[state=checked]:bg-neutral-800 dark:border-neutral-300 dark:data-[state=checked]:bg-neutral-200 mt-1"
                         />
                         <Label
                           htmlFor="terms"
-                          className="text-neutral-700 cursor-pointer dark:text-neutral-300"
+                          className="text-neutral-700 cursor-pointer dark:text-neutral-300 leading-relaxed"
                         >
                           I have read and agree to the Terms and Conditions
                         </Label>

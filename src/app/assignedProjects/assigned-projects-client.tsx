@@ -350,7 +350,7 @@ export default function AssignedProjectsClient({
                   </div>
                   <div className="h-8 w-8 bg-white rounded-full flex items-center justify-center ">
                     <img
-                      src="https://build.U2U.network/favicon.ico"
+                      src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
                       width={16}
                       height={16}
                       alt="U2U Icon"
@@ -611,7 +611,7 @@ export default function AssignedProjectsClient({
                           {/* Reward Amount */}
                           <div className="flex items-center gap-2 p-3 bg-neutral-50 dark:bg-neutral-950 rounded-lg">
                             <img
-                              src="https://build.U2U.network/favicon.ico"
+                              src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
                               width={24}
                               height={24}
                               alt="U2U Icon"

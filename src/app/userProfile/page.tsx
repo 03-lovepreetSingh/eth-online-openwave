@@ -956,7 +956,7 @@ export default function UserProfilePage() {
                     {
                       icon: (
                         <img
-                          src="https://build.U2U.network/favicon.ico"
+                          src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
                           width={40}
                           height={40}
                           className="w-6 h-6 "

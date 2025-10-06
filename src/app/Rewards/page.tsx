@@ -938,7 +938,7 @@ export default function Rewards() {
                         <div className="p-4 md:p-8">
                           <div className="flex flex-wrap items-center text-2xl md:text-3xl font-bold">
                             <img
-                              src="https://build.U2U.network/favicon.ico"
+                              src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
                               alt="U2U"
                               width={32}
                               height={32}
@@ -1055,7 +1055,7 @@ export default function Rewards() {
                                 className="flex flex-1 min-w-[80px] justify-center dark:hover:bg-neutral-800 hover:bg-neutral-200 dark:bg-neutral-900 dark:text-neutral-100 bg-neutral-100 text-neutral-900"
                               >
                                 <img
-                                  src="https://build.U2U.network/favicon.ico"
+                                  src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
                                   alt="U2U"
                                   width={16}
                                   height={16}
@@ -1068,7 +1068,7 @@ export default function Rewards() {
                                 className="flex flex-1 min-w-[80px] justify-center dark:hover:bg-neutral-800 hover:bg-neutral-200 dark:bg-neutral-900 dark:text-neutral-100 bg-neutral-100 text-neutral-900"
                               >
                                 <img
-                                  src="https://build.U2U.network/favicon.ico"
+                                  src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
                                   alt="U2U"
                                   width={16}
                                   height={16}
@@ -1081,7 +1081,7 @@ export default function Rewards() {
                                 className="flex flex-1 min-w-[80px] justify-center dark:hover:bg-neutral-800 hover:bg-neutral-200 dark:bg-neutral-900 dark:text-neutral-100 bg-neutral-100 text-neutral-900"
                               >
                                 <img
-                                  src="https://build.U2U.network/favicon.ico"
+                                  src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
                                   alt="U2U"
                                   width={16}
                                   height={16}

@@ -461,7 +461,7 @@ export default function RepositoryIssuesPage() {
                           <div className="flex gap-2 ">
                             <div className="flex items-center gap-1 text-black dark:text-neutral-100 font-bold text-sm lg:text-base">
                               <img
-                                src="https://build.U2U.network/favicon.ico"
+                                src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
                                 alt="U2U"
                                 width={16}
                                 height={16}
