@@ -3,7 +3,7 @@
 import { db } from "@/db";
 import { hack_projects, hackathons, hackathon_results, project_certificates } from "@/db/schema";
 import { eq, and } from "drizzle-orm";
-import { pdf, Document, Page, View, Text, Image, StyleSheet } from "@react-pdf/renderer";
+import { generateCertificatePDF } from "@/lib/pdf-generator";
 import pinataSDK from "@pinata/sdk";
 import fs from "fs";
 import path from "path";
@@ -48,154 +48,14 @@ export async function generateCertificateForProject(projectId: string, userId?: 
     const [hackathonRes] = await db.select().from(hackathons).where(eq(hackathons.id, projectRes.hackathon_id as string));
     const [resultRes] = await db.select().from(hackathon_results).where(eq(hackathon_results.project_id, projectId));
 
-    // Certificate PDF document component
-    const styles = StyleSheet.create({
-      page: {
-        flexDirection: 'column',
-        backgroundColor: '#FFFFFF',
-        padding: 20,
-        fontFamily: 'Helvetica',
-      },
-      border: {
-        position: 'absolute',
-        top: 10,
-        bottom: 10,
-        left: 10,
-        right: 10,
-        border: '5px solid #6B46C1', // Purple border
-      },
-      content: {
-        flex: 1,
-        padding: 20,
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-      },
-      header: {
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginBottom: 20,
-      },
-      logo: {
-        width: 240,
-        marginRight: 40,
-      },
-      companyName: {
-        fontSize: 28,
-        fontWeight: 'bold',
-        color: '#4A2A6C', // Darker purple
-      },
-      main: {
-        flexGrow: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        textAlign: 'center',
-      },
-      title: {
-        fontSize: 36,
-        fontWeight: 'bold',
-        color: '#6B46C1', // Purple
-        marginBottom: 20,
-        textTransform: 'uppercase',
-      },
-      subtitle: {
-        fontSize: 16,
-        color: '#333333',
-        marginBottom: 10,
-      },
-      recipient: {
-        fontSize: 28,
-        fontWeight: 'bold',
-        color: '#4A2A6C',
-        marginVertical: 15,
-        borderBottom: '2px solid #6B46C1',
-        paddingBottom: 5,
-      },
-      bodyText: {
-        fontSize: 14,
-        color: '#333333',
-        lineHeight: 1.5,
-        maxWidth: '80%',
-      },
-      rankText: {
-        fontSize: 18,
-        fontWeight: 'bold',
-        color: '#6B46C1',
-        marginTop: 20,
-      },
-      footer: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'flex-end',
-        marginTop: 40,
-      },
-      signatureContainer: {
-        width: '40%',
-        alignItems: 'center',
-      },
-      signatureLine: {
-        width: '100%',
-        borderBottom: '1px solid #333333',
-        marginBottom: 5,
-      },
-      signatureText: {
-        fontSize: 12,
-        color: '#333333',
-      },
-      dateContainer: {
-        width: '40%',
-        alignItems: 'center',
-      },
-      dateText: {
-        fontSize: 12,
-        color: '#333333',
-      },
+    // Generate PDF using the separate utility
+    const pdfBuffer = await generateCertificatePDF({
+      recipientName: projectRes.owner_id,
+      projectName: projectRes.project_name,
+      hackathonName: hackathonRes?.name ?? "Hackathon",
+      position: resultRes?.final_rank ? `${resultRes.final_rank}` : undefined,
+      date: new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
     });
-
-    const Certificate = (
-      <Document>
-        <Page size="A4" orientation="landscape" style={styles.page}>
-          <View style={styles.border} fixed />
-          <View style={styles.content}>
-            <View style={styles.header}>
-              <Image style={styles.logo} src="https://s3.tebi.io/gitfund/Untitled%20%284%29.png" />
-            </View>
-
-            <View style={styles.main}>
-              <Text style={styles.title}>Certificate of Participation</Text>
-              <Text style={styles.subtitle}>This certificate is proudly presented to</Text>
-              <Text style={styles.recipient}>{projectRes.owner_id}</Text>
-              <Text style={styles.bodyText}>
-                for their outstanding project "{projectRes.project_name}" in the {hackathonRes?.name ?? "Hackathon"}.
-              </Text>
-              {resultRes?.final_rank && (
-                <Text style={styles.rankText}>
-                  Achieved Rank: {resultRes.final_rank}
-                </Text>
-              )}
-            </View>
-
-            <View style={styles.footer}>
-              <View style={styles.dateContainer}>
-                <View style={styles.signatureLine} />
-                <Text style={styles.dateText}>
-                  Date: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-                </Text>
-              </View>
-              <View style={styles.signatureContainer}>
-                <View style={styles.signatureLine} />
-                <Text style={styles.signatureText}>openwave Team</Text>
-              </View>
-            </View>
-          </View>
-        </Page>
-      </Document>
-    );
-
-    // Render PDF to buffer (fix: use .toBuffer() from @react-pdf/renderer which returns a Buffer in Node.js)
-    const pdfInstance = pdf(Certificate);
-    // @react-pdf/renderer pdfInstance.toBuffer() returns a Node.js Buffer
-    const pdfBuffer = await pdfInstance.toBuffer();
 
     // Pin to Pinata
     const pinataJwt = process.env.PINATA_JWT;
