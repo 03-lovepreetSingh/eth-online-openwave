@@ -49,4 +49,4 @@
     ```
 5.  Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-_(Note: You'll need a configured Web3 wallet like MetaMask connected to the appropriate network (e.g., U2U, Educhain Testnet) and funded with test ETH for contract interactions.)_
+_(Note: You'll need a configured Web3 wallet like MetaMask connected to the appropriate network (e.g., HBAR, Educhain Testnet) and funded with test ETH for contract interactions.)_

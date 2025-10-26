@@ -396,7 +396,7 @@ const AnimatedNavLink = ({ href, children }: { href: string; children: React.Rea
   const textSizeClass = 'text-sm';
 
   return (
-    <a href={href} className={`group relative inline-block overU2U-hidden h-5 flex items-center ${textSizeClass}`}>
+    <a href={href} className={`group relative inline-block overHBAR-hidden h-5 flex items-center ${textSizeClass}`}>
       <div className="flex flex-col transition-transform duration-400 ease-out transform group-hover:-translate-y-1/2">
         <span className={defaultTextColor}>{children}</span>
         <span className={hoverTextColor}>{children}</span>
@@ -506,7 +506,7 @@ function MiniNavbar() {
         </button>
       </div>
 
-      <div className={`sm:hidden flex flex-col items-center w-full transition-all ease-in-out duration-300 overU2U-hidden
+      <div className={`sm:hidden flex flex-col items-center w-full transition-all ease-in-out duration-300 overHBAR-hidden
                        ${isOpen ? 'max-h-[1000px] opacity-100 pt-4' : 'max-h-0 opacity-0 pt-0 pointer-events-none'}`}>
         <nav className="flex flex-col items-center space-y-4 text-base w-full">
           {navLinksData.map((link) => (

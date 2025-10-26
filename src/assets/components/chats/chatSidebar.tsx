@@ -133,7 +133,7 @@ export default function Sidebar() {
               </Canvas>
             </div>
           </Suspense>
-          <div className="my-auto overU2U-hidden max-sm:hidden">
+          <div className="my-auto overHBAR-hidden max-sm:hidden">
             <h1
               ref={textRef}
               className="dark:text-white text-black text-2xl text-center max-md:text-xl max-sm:text-lg"

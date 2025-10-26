@@ -92,19 +92,19 @@ export const MacbookScroll = ({
         translate={translate}
       />
       {/* Base area */}
-      <div className="relative -z-10 h-[22rem] w-[32rem] overU2U-hidden rounded-2xl bg-neutral-200 dark:bg-[#272729]">
+      <div className="relative -z-10 h-[22rem] w-[32rem] overHBAR-hidden rounded-2xl bg-neutral-200 dark:bg-[#272729]">
         {/* above keyboard bar */}
         <div className="relative h-10 w-full">
           <div className="absolute inset-x-0 mx-auto h-4 w-[80%] bg-[#050505]" />
         </div>
         <div className="relative flex">
-          <div className="mx-auto h-full w-[10%] overU2U-hidden">
+          <div className="mx-auto h-full w-[10%] overHBAR-hidden">
             <SpeakerGrid />
           </div>
           <div className="mx-auto h-full w-[80%]">
             <Keypad />
           </div>
-          <div className="mx-auto h-full w-[10%] overU2U-hidden">
+          <div className="mx-auto h-full w-[10%] overHBAR-hidden">
             <SpeakerGrid />
           </div>
         </div>

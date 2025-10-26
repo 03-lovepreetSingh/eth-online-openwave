@@ -32,7 +32,7 @@ const StaggeredTextButton = ({ text,href, hoverText, className, ...props }) => {
             initial="rest"
             whileHover="hover"
             animate="rest"
-            className={`relative inline-block cursor-pointer overU2U-hidden whitespace-nowrap text-center transition-colors duration-300 ${className}`}
+            className={`relative inline-block cursor-pointer overHBAR-hidden whitespace-nowrap text-center transition-colors duration-300 ${className}`}
             {...props}
         >
             <motion.div

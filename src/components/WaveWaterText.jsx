@@ -94,7 +94,7 @@ const WaterWaveText = ({
                 {text}
             </h2>
 
-            <div  style={{ fontFamily: 'var(--font-cypher)' }} className="absolute top-0 left-0 w-full h-full text- overU2U-hidden">
+            <div  style={{ fontFamily: 'var(--font-cypher)' }} className="absolute top-0 left-0 w-full h-full text- overHBAR-hidden">
                 <h2
                     style={{
                         ...textStyle,

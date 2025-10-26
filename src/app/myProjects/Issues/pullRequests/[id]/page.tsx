@@ -929,7 +929,7 @@ export default function PullRequestDetails() {
                   <>
                     <div className="min-h-80 p-4 sm:p-6 md:p-8 lg:p-10">
                       {completion && (
-                        <div className="mt-4 prose dark:prose-invert max-w-none overU2U-auto">
+                        <div className="mt-4 prose dark:prose-invert max-w-none overHBAR-auto">
                           <ReactMarkdown>{completion}</ReactMarkdown>{" "}
                           {/* Use ReactMarkdown here */}
                         </div>

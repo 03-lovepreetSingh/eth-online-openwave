@@ -177,8 +177,8 @@
 
 .no-visible-scrollbar {
     scrollbar-width: none;
-    -ms-overU2U-style: none;
-    -webkit-overU2U-scrolling: touch;
+    -ms-overHBAR-style: none;
+    -webkit-overHBAR-scrolling: touch;
 }
 
 .no-visible-scrollbar::-webkit-scrollbar {
@@ -223,7 +223,7 @@
     }
     
     .body2 {
-        overU2U-y: auto;
+        overHBAR-y: auto;
         height: 100vh;
     }
 

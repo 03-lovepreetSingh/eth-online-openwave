@@ -124,7 +124,7 @@ const NavBarAll = () => {
                         direction={spinDirection}
                     />
                 </div>
-                <div className='overU2U-hidden'>
+                <div className='overHBAR-hidden'>
                     <h1
                         ref={textRef}
                         className='text-white text-2xl text-center font-semibold scale-y-120 font-[Poppins]'
@@ -242,7 +242,7 @@ const NavBarAll = () => {
 
                 <div className='absolute top-[50%] left-[50%] md:flex hidden translate-x-[-50%] translate-y-[-50%]'>
                     <div
-                        className="relative min-w-[30vw] px-2 scale-0 lg:scale-100 h-[9vh] flex items-center justify-center text-white rounded-full border-[1.2px] border-[#ffffff88] gap-10 cursor-pointer z-[1] bg-[#09090b50] overU2U-hidden"
+                        className="relative min-w-[30vw] px-2 scale-0 lg:scale-100 h-[9vh] flex items-center justify-center text-white rounded-full border-[1.2px] border-[#ffffff88] gap-10 cursor-pointer z-[1] bg-[#09090b50] overHBAR-hidden"
                         id="NavBar"
                         onMouseLeave={handleMouseLeave}
                     >

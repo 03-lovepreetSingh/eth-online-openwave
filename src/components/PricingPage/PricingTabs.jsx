@@ -61,7 +61,7 @@ export default function PricingPlans() {
     return (
         <section className="w-full text-white flex items-center justify-center py-5 mx-auto">
             {/* Mobile Carousel */}
-            <div className="md:hidden w-full overU2U-hidden relative rounded-xl">
+            <div className="md:hidden w-full overHBAR-hidden relative rounded-xl">
                 <div
                     className="flex transition-transform duration-700 ease-in-out rounded-xl"
                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -149,7 +149,7 @@ export function PricingTabs() {
             value: "Contributer",
             content: (
                 <div
-                    className="w-full overU2U-hidden relative min-h-[60vh] rounded-2xl py-10 px-5 text-xl md:text-4xl font-bold text-white bg-[#9D00FF] flex flex-col items-center gap-3">
+                    className="w-full overHBAR-hidden relative min-h-[60vh] rounded-2xl py-10 px-5 text-xl md:text-4xl font-bold text-white bg-[#9D00FF] flex flex-col items-center gap-3">
                     <h1 className="text-[5vw] md:text-[3.3vw] font-bold text-center">Ready to Turn Code into Money?</h1>
                     <p className="md:text-[1vw] text-[2vw] font-semibold text-center">Join a growing community of developers monetizing their open-source passion.</p>
 
@@ -164,7 +164,7 @@ export function PricingTabs() {
             value: "Maintainer",
             content: (
                 <div
-                    className="w-full overU2U-hidden relative min-h-[60vh] rounded-2xl py-10 px-5 text-xl md:text-4xl font-bold text-white bg-[#9D00FF] flex flex-col items-center gap-3">
+                    className="w-full overHBAR-hidden relative min-h-[60vh] rounded-2xl py-10 px-5 text-xl md:text-4xl font-bold text-white bg-[#9D00FF] flex flex-col items-center gap-3">
                     <h1 className="text-[4.7vw] md:text-[3.3vw] font-bold text-center">Boost Your Project, Attract Top Talent</h1>
                     <p className="md:text-[1vw] text-[2vw] font-semibold text-center">Create Bounties & Grow Your Community.</p>
 

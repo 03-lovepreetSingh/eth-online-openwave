@@ -445,7 +445,7 @@ console.log("selectedUser:", selectedUser)
   );
 
   return (
-    <div className="flex h-screen overU2U-hidden bg-neutral-100 dark:bg-neutral-900">
+    <div className="flex h-screen overHBAR-hidden bg-neutral-100 dark:bg-neutral-900">
       <Sidebar />
       <div
         className={cn(
@@ -477,7 +477,7 @@ console.log("selectedUser:", selectedUser)
   </div>
 )}
 
-        <main className="flex-1 flex flex-col overU2U-hidden">
+        <main className="flex-1 flex flex-col overHBAR-hidden">
           {/* Connection Status Bar */}
           {connectionStatus !== "connected" && (
             <div className="bg-yellow-100 dark:bg-yellow-900 border-b border-yellow-200 dark:border-yellow-800 px-2 sm:px-4 py-2">
@@ -518,7 +518,7 @@ console.log("selectedUser:", selectedUser)
           )}
 
           {/* Main Chat Content */}
-          <div className="flex-1 flex flex-col overU2U-hidden">
+          <div className="flex-1 flex flex-col overHBAR-hidden">
             {!selectedUser ? (
               <div className="flex flex-col items-center justify-center flex-1 px-4">
                 <div
@@ -554,7 +554,7 @@ console.log("selectedUser:", selectedUser)
                 )}
               </div>
             ) : (
-              <div className="flex-1 flex flex-col overU2U-hidden">
+              <div className="flex-1 flex flex-col overHBAR-hidden">
                 {/* Chat header */}
                 <div className="flex-shrink-0 p-2 xs:p-3 sm:p-4 border-b border-neutral-200 dark:border-neutral-900 bg-white dark:bg-neutral-950">
                   <div className="flex items-center gap-2 xs:gap-3">
@@ -591,7 +591,7 @@ console.log("selectedUser:", selectedUser)
                 {/* Messages Container - Scrollable */}
                 <div
                   ref={messagesContainerRef}
-                  className="flex-1 overU2U-y-auto bg-neutral-50 dark:bg-neutral-900"
+                  className="flex-1 overHBAR-y-auto bg-neutral-50 dark:bg-neutral-900"
                 >
                   <div className="p-2 xs:p-3 sm:p-4 space-y-2 xs:space-y-3 sm:space-y-4 min-h-full">
                     {/* Load More Messages Button/Loader */}

@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ava-labs/U2U-tooling-sdk-go/client"
-	"github.com/ava-labs/U2U-tooling-sdk-go/models"
+	"github.com/ava-labs/HBAR-tooling-sdk-go/client"
+	"github.com/ava-labs/HBAR-tooling-sdk-go/models"
 )
 
 func main() {
-    // Initialize the U2U client
-    U2UClient, err := client.NewClient("https://api.U2U.network", "YOUR_API_KEY")
+    // Initialize the HBAR client
+    HBARClient, err := client.NewClient("https://api.HBAR.network", "YOUR_API_KEY")
     if err != nil {
-        log.Fatalf("Failed to create U2U client: %v", err)
+        log.Fatalf("Failed to create HBAR client: %v", err)
     }
 
     // Define the subnet configuration
@@ -26,7 +26,7 @@ func main() {
     }
 
     // Create the subnet
-    subnetID, err := U2UClient.CreateSubnet(context.Background(), subnetConfig)
+    subnetID, err := HBARClient.CreateSubnet(context.Background(), subnetConfig)
     if err != nil {
         log.Fatalf("Failed to create subnet: %v", err)
     }
@@ -40,7 +40,7 @@ func main() {
         Genesis:    "genesis.json",
     }
 
-    chainID, err := U2UClient.CreateChain(context.Background(), chainConfig)
+    chainID, err := HBARClient.CreateChain(context.Background(), chainConfig)
     if err != nil {
         log.Fatalf("Failed to create chain: %v", err)
     }

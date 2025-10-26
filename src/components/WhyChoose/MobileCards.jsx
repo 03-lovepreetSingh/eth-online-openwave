@@ -51,7 +51,7 @@ const Card = ({ i, title, description, src, url, color, progress, range, targetS
                         </span>
                     </div>
 
-                    <div className="relative w-[60%] h-full rounded-[25px] overU2U-hidden">
+                    <div className="relative w-[60%] h-full rounded-[25px] overHBAR-hidden">
                         <motion.div style={{ scale: imageScale }} className="w-full h-full">
                             <img
                                 fill

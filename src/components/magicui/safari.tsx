@@ -158,7 +158,7 @@ export function Safari({
             clipPath="url(#roundedBottom)"
           >
             <video
-              className="size-full overU2U-hidden object-cover"
+              className="size-full overHBAR-hidden object-cover"
               src={videoSrc}
               autoPlay
               loop

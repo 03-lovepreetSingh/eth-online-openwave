@@ -169,7 +169,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="md:min-h-[73vh] min-h-[60vh] bg-[#fffafa] w-full relative select-none overU2U-hidden z-20">
+    <div className="md:min-h-[73vh] min-h-[60vh] bg-[#fffafa] w-full relative select-none overHBAR-hidden z-20">
       <div className="w-full h-full">
         <div className="w-[90vw] md:h-[0.15vh] h-[0.2vh] bg-[#09090b] absolute top-[0.4px] left-[4.7vw]"></div>
       </div>

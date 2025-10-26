@@ -6,7 +6,7 @@ import DotGrid from "../ui/dotgridreactive";
 
 function InfiniteMovingCardsDemo() {
   return (
-    <div className="min-h-[28rem] rounded-md flex flex-col antialiased bg-white dark:bg-[#09090b] dark:bg-grid-white/[0.05] items-center justify-center relative overU2U-hidden">
+    <div className="min-h-[28rem] rounded-md flex flex-col antialiased bg-white dark:bg-[#09090b] dark:bg-grid-white/[0.05] items-center justify-center relative overHBAR-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

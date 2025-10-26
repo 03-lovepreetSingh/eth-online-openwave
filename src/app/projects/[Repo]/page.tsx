@@ -1,4 +1,4 @@
-  "use client";
+"use client";
 
   import Sidebar from "@/assets/components/sidebar";
   import Topbar from "@/assets/components/topbar";
@@ -820,7 +820,7 @@
                                       ></span>
                                     </div>
                                     <div
-                                      className={`overU2U-hidden text-sm rounded-full font-medium dark:text-white text-custom-neutral`}
+                                      className={`overHBAR-hidden text-sm rounded-full font-medium dark:text-white text-custom-neutral`}
                                     >
                                       <span
                                         className={`${textColor} text-xl rounded-full mr-1.5`}
@@ -880,7 +880,7 @@
                         </div>
                       </div>
                       <div
-                        className={`dark:text-neutral-300 text-neutral-600 pt-4 h-[${width}] overU2U-hidden`}
+                        className={`dark:text-neutral-300 text-neutral-600 pt-4 h-[${width}] overHBAR-hidden`}
                       >
                         {repoData?.longdis}
                       </div>
@@ -1035,7 +1035,7 @@
                                   <div className="flex flex-col sm:flex-row sm:justify-between gap-2 text-sm">
                                     
                                     <div className="text-center sm:text-right flex">
-                                      <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png" alt="U2U Logo" width={24} height={24} className="mr-2" />
+                                      <img src="https://hashscan.io/crypto-logo-light.svg" alt="HBAR Logo" width={24} height={24} className="mr-2" />
                                       <div className="dark:text-neutral-300 text-xl text-neutral-900 font-bold">
                                         {issue.rewardAmount} 
                                       </div>

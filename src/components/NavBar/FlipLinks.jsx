@@ -12,7 +12,7 @@ const FlipLink = ({ children, size, color, font, onClick }) => {
                 initial="initial"
                 whileHover="hovered"
                 onClick={onClick}
-                className={`relative inline-block overU2U-hidden whitespace-nowrap ${font} ${color} select-none cursor-pointer ${size}`}
+                className={`relative inline-block overHBAR-hidden whitespace-nowrap ${font} ${color} select-none cursor-pointer ${size}`}
                 style={{
                     lineHeight: 1.2,
                 }}

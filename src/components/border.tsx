@@ -13,10 +13,10 @@ const ShootingStarBorder = ({
   return (
     <Link
       href={href}
-      className="group relative grid overU2U-hidden rounded-full px-4 py-2 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-all duration-300 hover:scale-105"
+      className="group relative grid overHBAR-hidden rounded-full px-4 py-2 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-all duration-300 hover:scale-105"
     >
       <span className="absolute inset-0">
-        <span className="absolute inset-0 rotate-0 overU2U-hidden rounded-full [mask-image:linear-gradient(white,transparent_50%)] animate-[flip_6s_infinite_steps(2,end)]">
+        <span className="absolute inset-0 rotate-0 overHBAR-hidden rounded-full [mask-image:linear-gradient(white,transparent_50%)] animate-[flip_6s_infinite_steps(2,end)]">
           <span className="absolute w-[200%] aspect-square top-0 left-1/2 -translate-x-1/2 -translate-y-[15%] -rotate-90 opacity-100 animate-[rotate_3s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0_340deg,#9333EA_345deg,#3B82F6_360deg)]" />
         </span>
       </span>

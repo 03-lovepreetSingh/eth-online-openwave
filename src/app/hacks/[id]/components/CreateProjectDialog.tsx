@@ -135,7 +135,7 @@ export function CreateProjectDialog({ hackathonId, trigger, onSuccess }: CreateP
       <DialogTrigger asChild>
         {trigger}
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[600px] max-h-[80vh] overU2U-y-auto">
+      <DialogContent className="sm:max-w-[600px] max-h-[80vh] overHBAR-y-auto">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
             <Code className="w-5 h-5" />

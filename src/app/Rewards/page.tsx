@@ -559,7 +559,7 @@ export default function Rewards() {
           {
             <div className="flex">
               <div className={` ${withdraw ? "w-[70%]" : "w-full"}`}>
-                <main className="mt-16 overU2U-x-hidden overU2U-y-auto">
+                <main className="mt-16 overHBAR-x-hidden overHBAR-y-auto">
                   <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 lg:py-8">
                     {/* Header */}
                     <div className="flex justify-between mb-6 lg:mb-8">
@@ -581,7 +581,7 @@ export default function Rewards() {
                     {/* Stats Cards */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mb-6 lg:mb-8">
                       {/* Total Rewarded Card */}
-                      <Card className="relative overU2U-hidden">
+                      <Card className="relative overHBAR-hidden">
                         <div className="absolute inset-0 bg-gradient-to-r from-purple-600 via-pink-500 to-red-500"></div>
                         <CardContent className="relative p-4 lg:p-6 text-white">
                           <div className="flex items-center justify-between">
@@ -590,7 +590,7 @@ export default function Rewards() {
                                 Total Rewarded
                               </p>
                               <p className="text-xl lg:text-3xl font-bold">
-                                {totalRewarded.toFixed(4)} U2U
+                                {totalRewarded.toFixed(4)} HBAR
                               </p>
                             </div>
                             <div className="h-8 w-8 lg:h-10 lg:w-10 bg-white/20 rounded-full flex items-center justify-center">
@@ -609,7 +609,7 @@ export default function Rewards() {
                                 Paid
                               </p>
                               <p className="text-xl lg:text-3xl font-bold text-neutral-900 dark:text-white">
-                                {parseFloat(totalPaidRewards.toFixed(4))} U2U
+                                {parseFloat(totalPaidRewards.toFixed(4))} HBAR
                               </p>
                             </div>
                             <div className="h-8 w-8 lg:h-10 lg:w-10 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
@@ -642,7 +642,7 @@ export default function Rewards() {
                                     }px`,
                                     minHeight: "6px",
                                   }}
-                                  title={`${monthMap[month] || 0} U2U`}
+                                  title={`${monthMap[month] || 0} HBAR`}
                                 ></div>
                                 <span className="text-xs text-neutral-500 dark:text-neutral-400 mt-1 block truncate">
                                   {isMobile ? month.slice(0, 3) : month}
@@ -743,7 +743,7 @@ export default function Rewards() {
                                       <div className="flex items-center justify-between">
                                         <span>Amount:</span>
                                         <span className="font-medium text-neutral-900 dark:text-white">
-                                          {reward.rewardAmount.toFixed(4)} U2U
+                                          {reward.rewardAmount.toFixed(4)} HBAR
                                         </span>
                                       </div>
                                       <div className="flex items-center justify-between">
@@ -771,7 +771,7 @@ export default function Rewards() {
                             </div>
 
                             {/* Desktop Table View */}
-                            <div className="hidden md:block overU2U-x-auto">
+                            <div className="hidden md:block overHBAR-x-auto">
                               <table className="min-w-full divide-y divide-neutral-200 dark:divide-neutral-700">
                                 <thead className="bg-neutral-50 dark:bg-neutral-800">
                                   <tr>
@@ -837,7 +837,7 @@ export default function Rewards() {
                                         </div>
                                       </td>
                                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-neutral-900 dark:text-white">
-                                        {reward.rewardAmount.toFixed(4)} U2U
+                                        {reward.rewardAmount.toFixed(4)} HBAR
                                       </td>
                                       <td className="px-6 py-4 whitespace-nowrap">
                                         <Badge variant="secondary">
@@ -866,7 +866,7 @@ export default function Rewards() {
                             !withdraw
                               ? "w-0"
                               : isMobile
-                              ? "w-full fixed top-0 left-0 z-50 bg-white dark:bg-black overU2U-y-auto"
+                              ? "w-full fixed top-0 left-0 z-50 bg-white dark:bg-black overHBAR-y-auto"
                               : "w-[30%]"
                           }
                         `}
@@ -938,8 +938,8 @@ export default function Rewards() {
                         <div className="p-4 md:p-8">
                           <div className="flex flex-wrap items-center text-2xl md:text-3xl font-bold">
                             <img
-                              src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
-                              alt="U2U"
+                              src="https://hashscan.io/crypto-logo-light.svg"
+                              alt="HBAR"
                               width={32}
                               height={32}
                               className="mr-2"
@@ -949,7 +949,7 @@ export default function Rewards() {
                                 parseFloat(totalPaidRewards.toFixed(4))}
                             </span>
                             <div className="text-lg md:text-xl text-neutral-400 dark:text-neutral-600 pl-2 my-auto">
-                              U2U
+                              HBAR
                             </div>
                           </div>
                           <div className="text-lg text-neutral-600 dark:text-neutral-400"></div>
@@ -1055,8 +1055,8 @@ export default function Rewards() {
                                 className="flex flex-1 min-w-[80px] justify-center dark:hover:bg-neutral-800 hover:bg-neutral-200 dark:bg-neutral-900 dark:text-neutral-100 bg-neutral-100 text-neutral-900"
                               >
                                 <img
-                                  src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
-                                  alt="U2U"
+                                  src="https://hashscan.io/crypto-logo-light.svg"
+                                  alt="HBAR"
                                   width={16}
                                   height={16}
                                   className="mr-1"
@@ -1068,8 +1068,8 @@ export default function Rewards() {
                                 className="flex flex-1 min-w-[80px] justify-center dark:hover:bg-neutral-800 hover:bg-neutral-200 dark:bg-neutral-900 dark:text-neutral-100 bg-neutral-100 text-neutral-900"
                               >
                                 <img
-                                  src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
-                                  alt="U2U"
+                                  src="https://hashscan.io/crypto-logo-light.svg"
+                                  alt="HBAR"
                                   width={16}
                                   height={16}
                                   className="mr-1"
@@ -1081,8 +1081,8 @@ export default function Rewards() {
                                 className="flex flex-1 min-w-[80px] justify-center dark:hover:bg-neutral-800 hover:bg-neutral-200 dark:bg-neutral-900 dark:text-neutral-100 bg-neutral-100 text-neutral-900"
                               >
                                 <img
-                                  src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
-                                  alt="U2U"
+                                  src="https://hashscan.io/crypto-logo-light.svg"
+                                  alt="HBAR"
                                   width={16}
                                   height={16}
                                   className="mr-1"

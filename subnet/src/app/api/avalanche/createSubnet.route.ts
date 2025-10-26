@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { U2U } from 'U2U';
-import { createSubnetTx } from '../../../lib/U2U/txHelpers';
-import { getU2UClient } from '../../../lib/U2U/client';
+import { HBAR } from 'HBAR';
+import { createSubnetTx } from '../../../lib/HBAR/txHelpers';
+import { getHBARClient } from '../../../lib/HBAR/client';
 
 export default async function createSubnet(req: NextApiRequest, res: NextApiResponse) {
     if (req.method !== 'POST') {
@@ -15,9 +15,9 @@ export default async function createSubnet(req: NextApiRequest, res: NextApiResp
     }
 
     try {
-        const U2U = getU2UClient();
-        const tx = createSubnetTx(U2U, subnetId, tokenSymbol, vmType, gasFeeConfig);
-        const txID = await U2U.buildAndSend(tx);
+        const HBAR = getHBARClient();
+        const tx = createSubnetTx(HBAR, subnetId, tokenSymbol, vmType, gasFeeConfig);
+        const txID = await HBAR.buildAndSend(tx);
 
         return res.status(200).json({ txID });
     } catch (error) {

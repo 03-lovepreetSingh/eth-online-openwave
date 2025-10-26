@@ -164,7 +164,7 @@ const NavBar3 = () => {
             direction={spinDirection}
           />
         </div>
-        <div className="overU2U-hidden">
+        <div className="overHBAR-hidden">
           <h1
             ref={textRef}
             className={`${

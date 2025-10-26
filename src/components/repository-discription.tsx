@@ -79,7 +79,7 @@ export function RepositoryDescription({
 
             <div
               className={`prose prose-sm dark:prose-invert max-w-none transition-all ${
-                expanded ? "max-h-full" : "max-h-[300px] overU2U-hidden"
+                expanded ? "max-h-full" : "max-h-[300px] overHBAR-hidden"
               }`}
             >
               {formattedContent.map((item, index) => {

@@ -40,7 +40,7 @@ const Page1 = () => {
 
     return (
         <>
-            <div style={{ perspective: "2000px" }} ref={containerRef} className="relative w-full h-screen flex items-center justify-center overU2U-hidden">
+            <div style={{ perspective: "2000px" }} ref={containerRef} className="relative w-full h-screen flex items-center justify-center overHBAR-hidden">
                 <div ref={Sphere} id='SPHERE' className='relative w-full z-50 h-screen flex items-end justify-center pointer-events-none'>
                     <div className="absolute top-[57%] w-[1034px] h-[1000px] rounded-full bg-[#4F46E5] border-2 border-[#4F46E5] z-10 blur-2xl " />
                     <div className="absolute top-[48%] w-[1000px] h-[1000px] rounded-full bg-[#A78BFA] border-2 border-[#A78BFA] z-[5] blur-2xl" />

@@ -54,7 +54,7 @@ const StringAnimation = () => {
 
     return (
         <div>
-            <div ref={string1Ref} id="string1" className='lg:flex items-center justify-center h-[6vh] w-full overU2U-visible z-[5] hidden mb-8'>
+            <div ref={string1Ref} id="string1" className='lg:flex items-center justify-center h-[6vh] w-full overHBAR-visible z-[5] hidden mb-8'>
                 <svg id="str1" width="1440" height="200" className='z-[5]'>
                     <path d="M 40 100 Q 700 100 1050 100" stroke={"#09090b"} fill="transparent" />
                 </svg>

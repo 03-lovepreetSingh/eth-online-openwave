@@ -217,8 +217,8 @@ export default function IssuePullRequestsPage() {
 
                       <div className="flex gap-1 text-neutral-300 font-bold text-xl">
                         <img
-                          src={`https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png`}
-                          alt="U2U"
+                          src={`https://hashscan.io/crypto-logo-light.svg`}
+                          alt="HBAR"
                           width={20}
                           height={20}
                         />

@@ -91,7 +91,7 @@ export default function MaintainerWalletDashboard() {
   const [activeBounties] = useState<ActiveBounty[]>([
     {
       id: "1",
-      title: "Fix authentication bug in login U2U",
+      title: "Fix authentication bug in login HBAR",
       githubUrl: "https://github.com/project/repo/issues/123",
       amount: "2.0",
       assignedTo: "dev_alice",
@@ -159,7 +159,7 @@ export default function MaintainerWalletDashboard() {
           `}
         >
           <Topbar />
-          <main className="mt-16 overU2U-x-hidden overU2U-y-auto">
+          <main className="mt-16 overHBAR-x-hidden overHBAR-y-auto">
             <div className="container mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-4 sm:py-6 lg:py-8">
               {/* Header with Wallet Info */}
               <div className="mb-4 sm:mb-6 lg:mb-8">
@@ -219,7 +219,7 @@ export default function MaintainerWalletDashboard() {
               {/* Key Metrics Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 mb-4 sm:mb-6 lg:mb-8">
                 {/* Wallet Balance */}
-                <Card className="relative overU2U-hidden">
+                <Card className="relative overHBAR-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-500 to-indigo-600"></div>
                   <CardContent className="relative p-3 sm:p-4 lg:p-6 text-white">
                     <div className="flex items-center justify-between">

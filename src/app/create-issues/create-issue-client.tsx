@@ -627,7 +627,7 @@ export default function CreateIssueClient({ session, managedProjects,userProfile
                                 htmlFor="rewardAmount"
                                 className="text-sm font-medium"
                               >
-                                Reward Amount (U2U) *
+                                Reward Amount (HBAR) *
                               </Label>
                               <Input
                                 id="rewardAmount"

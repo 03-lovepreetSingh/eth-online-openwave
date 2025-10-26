@@ -2,7 +2,7 @@ import { MessageCircle, ChevronDown, Filter, MoreHorizontal } from 'lucide-react
 
 export default function GitHubIssueList() {
   return (
-    <div className="bg-[#0e0e0e] text-neutral-100 rounded-md overU2U-hidden border border-neutral-700">
+    <div className="bg-[#0e0e0e] text-neutral-100 rounded-md overHBAR-hidden border border-neutral-700">
       {/* Header row */}
       <div className="flex items-center p-2 bg-[#0a0a0a] border-b border-neutral-700 text-sm">
         <div className="flex items-center gap-6">

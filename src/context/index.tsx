@@ -1,6 +1,6 @@
 "use client";
 
-import { wagmiAdapter, projectId, networks,U2UMainnet, u2uTestnet} from "../config";
+import { wagmiAdapter, projectId, hederaTestnet } from "../config";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createAppKit } from "@reown/appkit/react";
 import React, { type ReactNode } from "react";
@@ -31,8 +31,8 @@ const metadata = {
 const modal = createAppKit({
   adapters: [wagmiAdapter],
   projectId,
-  networks: [u2uTestnet, U2UMainnet],
-  defaultNetwork: networks[0],
+  networks: [hederaTestnet],
+  defaultNetwork: hederaTestnet,
   metadata: metadata,
   features: {
     analytics: true,

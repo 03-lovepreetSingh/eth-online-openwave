@@ -35,7 +35,7 @@ const HomeElems = () => {
   const { isLoaded } = useThemeChange();
 
   return (
-    <div id="CompleteHomePage" className="bg-[#09090b] w-full min-h-screen overU2U-hidden relative">
+    <div id="CompleteHomePage" className="bg-[#09090b] w-full min-h-screen overHBAR-hidden relative">
       <CustomCursor />
       <div className="text-white block gap-20 px-10 lg:px-0  lg:flex max-w-7xl mx-auto  py-20 lg:py-40">
         <div className='text-white  w-full h-full inset-0 absolute z-0'>

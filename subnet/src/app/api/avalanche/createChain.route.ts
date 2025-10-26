@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { createChain } from '../../../lib/U2U/txhelpers';
+import { createChain } from '../../../lib/HBAR/txhelpers';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method !== 'POST') {

@@ -299,7 +299,7 @@ export default function FaucetPage() {
           <Topbar />
           <div className="flex min-h-screen bg-gray-100 dark:bg-gray-950">
             {/* Side Screen */}
-            <div className="hidden md:flex md:w-1/2 lg:w-2/5 items-center justify-center p-8 bg-gradient-to-br from-purple-600 to-indigo-800 text-white relative overU2U-hidden">
+            <div className="hidden md:flex md:w-1/2 lg:w-2/5 items-center justify-center p-8 bg-gradient-to-br from-purple-600 to-indigo-800 text-white relative overHBAR-hidden">
               <div className="absolute inset-0 z-0 opacity-20">
                 <img
                   src="/placeholder.svg?height=1080&width=1920"

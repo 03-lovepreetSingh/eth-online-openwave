@@ -341,7 +341,7 @@ export default function Topbar() {
                           <div className="text-[14px] flex px-4 mt-1">
                             Balance:
                             <span>
-                              <img src="https://s3-symbol-logo.tradingview.com/crypto/XTVCU2U--600.png" className="w-5 h-5 rounded-full" />
+                              <img src="https://hashscan.io/crypto-logo-light.svg" className="w-5 h-5 rounded-full" />
                             </span>
                             {formattedBalance}
                           </div>

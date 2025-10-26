@@ -5,7 +5,7 @@ import DotGrid from '../ui/dotgridreactive';
 
 const EndPage = () => {
     return (
-        <div className='bg-[#09090b] w-full overU2U-hidden relative flex items-end justify-center'>
+        <div className='bg-[#09090b] w-full overHBAR-hidden relative flex items-end justify-center'>
             <div className='max-w-[30vw] z-20 text-white text-6xl py-20'>
                 Built Different
             </div>

@@ -189,7 +189,7 @@ const MaskedPage = () => {
           <div
             style={{ perspective: "2000px" }}
             ref={containerRef2}
-            className="relative w-full h-screen flex items-center justify-center overU2U-hidden"
+            className="relative w-full h-screen flex items-center justify-center overHBAR-hidden"
           >
             <motion.div
               ref={Sphere}

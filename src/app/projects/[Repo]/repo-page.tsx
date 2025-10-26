@@ -664,7 +664,7 @@ export default function RepoPageClient({
                                   <div className="rounded-xl">
                                     <span className={`h-2.5 w-2.5 ${dotColor} rounded-full mr-1.5`}></span>
                                   </div>
-                                  <div className={`overU2U-hidden text-sm rounded-full font-medium dark:text-white text-custom-neutral`}>
+                                  <div className={`overHBAR-hidden text-sm rounded-full font-medium dark:text-white text-custom-neutral`}>
                                     <span className={`${textColor} text-xl rounded-full mr-1.5`}>•</span>
                                     <span className="text-[14px]">{lang}</span>{" "}
                                     <span className="dark:text-custom-neutral text-[14px] text-custom-neutral">
@@ -716,7 +716,7 @@ export default function RepoPageClient({
                       </div>
                     </div>
                     <div
-                      className={`dark:text-neutral-300 text-neutral-600 pt-4 h-[${width}] overU2U-hidden`}
+                      className={`dark:text-neutral-300 text-neutral-600 pt-4 h-[${width}] overHBAR-hidden`}
                     >
                       {repoData?.longdis}
                     </div>
@@ -724,7 +724,7 @@ export default function RepoPageClient({
                       <h3 className="text-lg font-semibold mb-2">
                         AI Generated Project Summary:
                       </h3>
-                      <div className="text-sm whitespace-pre-wrap max-w-full overU2U-x-auto">
+                      <div className="text-sm whitespace-pre-wrap max-w-full overHBAR-x-auto">
                         <ReactMarkdown>
                           {isExpanded
                             ? repoData?.aiDescription || aiReply
@@ -873,8 +873,8 @@ export default function RepoPageClient({
                                     <div className="flex flex-col sm:flex-row sm:justify-between gap-2 text-sm">
                                       <div className="text-center sm:text-right flex">
                                         <img
-                                          src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
-                                          alt="U2U Logo"
+                                          src="https://hashscan.io/crypto-logo-light.svg"
+                                          alt="HBAR Logo"
                                           width={24}
                                           height={24}
                                           className="mr-2"

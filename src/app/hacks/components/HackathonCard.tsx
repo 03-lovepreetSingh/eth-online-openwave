@@ -61,7 +61,7 @@ export function HackathonCard({ hackathon }: HackathonCardProps) {
   return (
     <Card className="group hover:shadow-lg transition-all duration-200 border border-neutral-200 dark:border-neutral-700">
       {hackathon.image_url && (
-        <div className="relative h-48 overU2U-hidden rounded-t-lg">
+        <div className="relative h-48 overHBAR-hidden rounded-t-lg">
           <img
             src={hackathon.image_url}
             alt={hackathon.name}

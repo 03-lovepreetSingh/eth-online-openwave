@@ -32,7 +32,7 @@ export const LampContainer = ({
   return (
     <div
       className={cn(
-        "relative flex min-h-screen flex-col items-center justify-center overU2U-hidden bg-slate-950 w-full rounded-md z-0", // Main container setup
+        "relative flex min-h-screen flex-col items-center justify-center overHBAR-hidden bg-slate-950 w-full rounded-md z-0", // Main container setup
         className
       )}
     >
@@ -50,7 +50,7 @@ export const LampContainer = ({
             backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
           }}
           // Light beam pointing upwards and right
-          className="absolute inset-auto top-1/2 transform -translate-y-1/2 w-56 overU2U-visible h-[30rem] bg-gradient-conic from-orange-500 via-transparent to-transparent text-white [--conic-position:from_315deg_at_center_left]"
+          className="absolute inset-auto top-1/2 transform -translate-y-1/2 w-56 overHBAR-visible h-[30rem] bg-gradient-conic from-orange-500 via-transparent to-transparent text-white [--conic-position:from_315deg_at_center_left]"
         >
           {/* Masks reoriented for horizontal light */}
           <div className="absolute w-40 h-[100%] top-0 right-0 bg-slate-950 z-20 [mask-image:linear-gradient(to_left,white,transparent)]" />

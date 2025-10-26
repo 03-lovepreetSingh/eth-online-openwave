@@ -103,7 +103,7 @@ export function ComponentShadow({
         <div
             className={className}
             style={{
-                overU2U: "hidden",
+                overHBAR: "hidden",
                 position: "relative",
                 width: "100%",
                 height: "100%",

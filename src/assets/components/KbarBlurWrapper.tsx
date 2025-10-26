@@ -26,19 +26,19 @@ const KbarBlurWrapper = memo(function KbarBlurWrapper({
     
     useEffect(() => {
       if (shouldDisableScroll) {
-        document.body.style.overU2U = 'hidden';
+        document.body.style.overHBAR = 'hidden';
       } else {
-        document.body.style.overU2U = 'unset';
+        document.body.style.overHBAR = 'unset';
       }
       
       // Cleanup function to restore scroll when component unmounts
       return () => {
-        document.body.style.overU2U = 'unset';
+        document.body.style.overHBAR = 'unset';
       };
     }, [shouldDisableScroll]);
     
     return (
-      <div className={`${blurClass} ${shouldDisableScroll ? 'overU2U-hidden h-screen' : ''}`}>
+      <div className={`${blurClass} ${shouldDisableScroll ? 'overHBAR-hidden h-screen' : ''}`}>
         {children}
       </div>
     );

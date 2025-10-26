@@ -417,7 +417,7 @@ export default function PullRequestsPage({
                     </div>
 
                     {/* Desktop Table View */}
-                    <div className="hidden md:block overU2U-x-auto rounded-lg border border-neutral-200 dark:border-neutral-900">
+                    <div className="hidden md:block overHBAR-x-auto rounded-lg border border-neutral-200 dark:border-neutral-900">
                       <table className="min-w-full bg-white dark:bg-neutral">
                         <thead>
                           <tr className="text-xs text-neutral-500 uppercase bg-neutral-50 dark:bg-neutral-900">

@@ -92,7 +92,7 @@ export default function Sidebar() {
         style={{ transitionProperty: "width, padding" }}
       >
         <div className="flex flex-col h-full justify-between">
-          <div className="flex-1 overU2U-y-auto">
+          <div className="flex-1 overHBAR-y-auto">
             <div className="mb-4">
               {isShrunk ? (
                 <>
@@ -184,7 +184,7 @@ export default function Sidebar() {
                         </Canvas>
                       </div>
                     </Suspense>
-                    <div className="my-auto overU2U-hidden">
+                    <div className="my-auto overHBAR-hidden">
                       <h1
                         ref={textRef}
                         className={`dark:text-white text-black text-2xl text-center  `}

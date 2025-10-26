@@ -19,9 +19,9 @@ cat <<EOF > subnet/config/subnet-config.json
 }
 EOF
 
-# Create the subnet using the U2U CLI
+# Create the subnet using the HBAR CLI
 echo "Creating subnet..."
-U2U-cli create-subnet --config subnet/config/subnet-config.json
+HBAR-cli create-subnet --config subnet/config/subnet-config.json
 
 # Check if the subnet was created successfully
 if [ $? -eq 0 ]; then

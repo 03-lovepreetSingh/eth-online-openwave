@@ -1,7 +1,7 @@
 {
-  "name": "nextjs-U2U-subnet",
+  "name": "nextjs-HBAR-subnet",
   "version": "1.0.0",
-  "description": "A Next.js application for creating and managing U2U subnets and blockchains.",
+  "description": "A Next.js application for creating and managing HBAR subnets and blockchains.",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -11,8 +11,8 @@
     "sign:tx": "ts-node scripts/sign_tx.ts"
   },
   "dependencies": {
-    "@avalabs/U2Ujs": "^5.0.0",
-    "U2U": "^3.16.0",
+    "@avalabs/HBARjs": "^5.0.0",
+    "HBAR": "^3.16.0",
     "axios": "^0.21.1",
     "next": "15.0.0",
     "react": "^19.1.1",

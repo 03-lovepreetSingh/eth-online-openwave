@@ -126,7 +126,7 @@ export default function HackathonPage() {
         <Sidebar />
         <div className={`flex-1 flex flex-col transition-all duration-300 ${isShrunk ? "ml-16" : "ml-64"}`}>
           <Topbar />
-          <main className="flex-1 overU2U-auto p-6">
+          <main className="flex-1 overHBAR-auto p-6">
             <div className="max-w-7xl mx-auto">
               <div className="animate-pulse space-y-6">
                 <div className="h-8 bg-neutral-200 rounded w-1/3"></div>
@@ -146,7 +146,7 @@ export default function HackathonPage() {
         <Sidebar />
         <div className={`flex-1 flex flex-col transition-all duration-300 ${isShrunk ? "ml-16" : "ml-64"}`}>
           <Topbar />
-          <main className="flex-1 overU2U-auto p-6">
+          <main className="flex-1 overHBAR-auto p-6">
             <div className="max-w-7xl mx-auto text-center py-12">
               <h1 className="text-2xl font-bold text-neutral-900 dark:text-white mb-4">
                 Hackathon Not Found
@@ -172,11 +172,11 @@ export default function HackathonPage() {
       <Sidebar />
       <div className={`flex-1 flex flex-col transition-all duration-300 ${isShrunk ? "ml-16" : "ml-64"}`}>
         <Topbar />
-        <main className="flex-1 overU2U-auto">
+        <main className="flex-1 overHBAR-auto">
           {/* Hero Section */}
           <div className="relative">
             {hackathon.image_url && (
-              <div className="h-64 bg-gradient-to-r from-blue-600 to-purple-600 relative overU2U-hidden">
+              <div className="h-64 bg-gradient-to-r from-blue-600 to-purple-600 relative overHBAR-hidden">
                 <img
                   src={hackathon.image_url}
                   alt={hackathon.name}

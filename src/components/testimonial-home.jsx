@@ -79,7 +79,7 @@ export default function TestimonialCarousel() {
 
   return (
     <div className="w-full max-w-4xl mx-auto">
-      <div className=" text-white rounded-[40px] p-4 md:p-16 relative overU2U-hidden min-h-[400px] flex flex-col justify-between">
+      <div className=" text-white rounded-[40px] p-4 md:p-16 relative overHBAR-hidden min-h-[400px] flex flex-col justify-between">
         {/* Decorative top quote icon */}
         <svg
           className="hidden lg:absolute top-8 left-8 w-8 h-8 text-neutral-700"

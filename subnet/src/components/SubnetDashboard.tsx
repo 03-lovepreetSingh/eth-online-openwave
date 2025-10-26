@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getSubnetInfo } from '../lib/U2U/client'; // Assuming this function fetches subnet info
+import { getSubnetInfo } from '../lib/HBAR/client'; // Assuming this function fetches subnet info
 
 const SubnetDashboard = () => {
     const [subnetInfo, setSubnetInfo] = useState(null);

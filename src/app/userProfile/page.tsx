@@ -542,7 +542,7 @@ export default function UserProfilePage() {
                       Worked {uniqueRewardDays} days in the last year
                     </p>
                   </div>
-                  <div className="overU2U-x-auto w-full">
+                  <div className="overHBAR-x-auto w-full">
                     {/* Component placeholder - you'll need to implement this */}
                     <div className="h-64 bg-neutral-100 dark:bg-neutral-700 rounded flex items-center justify-center">
                       <p className="text-neutral-500 dark:text-neutral-400">
@@ -616,7 +616,7 @@ export default function UserProfilePage() {
             <h2 className="text-xl font-semibold mb-4 text-neutral-900 dark:text-white">
               Completed Pull Requests
             </h2>
-            <div className="overU2U-x-auto">
+            <div className="overHBAR-x-auto">
               <table className="min-w-full divide-y divide-neutral-200 dark:divide-neutral-700">
                 <thead className="bg-neutral-50 dark:bg-neutral-700">
                   <tr>
@@ -956,7 +956,7 @@ export default function UserProfilePage() {
                     {
                       icon: (
                         <img
-                          src="https://s2.coinmarketcap.com/static/img/coins/64x64/27369.png"
+                          src="https://hashscan.io/crypto-logo-light.svg"
                           width={40}
                           height={40}
                           className="w-6 h-6 "

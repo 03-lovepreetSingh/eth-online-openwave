@@ -1,7 +1,7 @@
 {
   "vm": "SubnetEVM",
   "subnetId": 1,
-  "tokenSymbol": "U2U",
+  "tokenSymbol": "HBAR",
   "gasFee": {
     "lowDiskUse": true,
     "lowThroughput": true

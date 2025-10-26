@@ -1,12 +1,12 @@
-import { U2U, Buffer, BinTools, BufferReader, BufferWriter } from "U2U";
-import { KeyPair } from "U2U/dist/common/keypair";
-import { Tx } from "U2U/dist/common/tx";
-import { TxBuilder } from "U2U/dist/common/txBuilder";
-import { TxStatus } from "U2U/dist/common/txStatus";
-import { getTxStatus } from "../lib/U2U/txhelpers";
+import { HBAR, Buffer, BinTools, BufferReader, BufferWriter } from "HBAR";
+import { KeyPair } from "HBAR/dist/common/keypair";
+import { Tx } from "HBAR/dist/common/tx";
+import { TxBuilder } from "HBAR/dist/common/txBuilder";
+import { TxStatus } from "HBAR/dist/common/txStatus";
+import { getTxStatus } from "../lib/HBAR/txhelpers";
 
-// Initialize U2U client
-const ava = new U2U("localhost", 9650, "http");
+// Initialize HBAR client
+const ava = new HBAR("localhost", 9650, "http");
 
 // Function to sign a transaction
 async function signTransaction(tx: Tx, keyPair: KeyPair): Promise<Tx> {

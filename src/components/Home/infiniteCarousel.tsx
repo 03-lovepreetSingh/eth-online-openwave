@@ -244,7 +244,7 @@ export default function InfiniteCarousel() {
   }, []);
 
   const renderRow = (items: typeof items1, ref: React.RefObject<HTMLDivElement>) => (
-    <div ref={ref} className="   relative w-full overU2U-hidden py-2">
+    <div ref={ref} className="   relative w-full overHBAR-hidden py-2">
       <div className="flex gap-3 whitespace-nowrap">
         {/* Duplicate items for seamless loop */}
         {[...items, ...items].map((logo, index) => (
@@ -264,7 +264,7 @@ export default function InfiniteCarousel() {
   );
 
   return (
-    <div className="w-full [mask-image:linear-gradient(to_right,transparent,black_25%,black_75%,transparent)]  overU2U-hidden space-y-4">
+    <div className="w-full [mask-image:linear-gradient(to_right,transparent,black_25%,black_75%,transparent)]  overHBAR-hidden space-y-4">
       {renderRow(items1, scrollRef1 as React.RefObject<HTMLDivElement>)}
       {renderRow(items2, scrollRef2 as React.RefObject<HTMLDivElement>)}
       {renderRow(items3, scrollRef3 as React.RefObject<HTMLDivElement>)}

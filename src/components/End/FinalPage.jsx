@@ -60,7 +60,7 @@ const StringAnimation2 = () => {
 
     return (
         <div>
-            <div ref={string1Ref} id="string1" className='lg:flex items-center justify-center h-[6vh] overU2U-visible z-[5] hidden mb-8'>
+            <div ref={string1Ref} id="string1" className='lg:flex items-center justify-center h-[6vh] overHBAR-visible z-[5] hidden mb-8'>
                 <svg id="str1" width="1440" height="200" className='z-[5]'>
                     <path d="M 100 100 Q 700 100 1350 100" stroke={"#dbcaab"} strokeWidth={2} fill="transparent" />
                 </svg>
@@ -143,7 +143,7 @@ const FinalPage = () => {
                         color: '#09090b', 
                         duration: 1.5, // Slightly longer duration for smoother transition
                         ease: 'power2.out' // Smoother easing
-                        }, i * 0.08); // Reduced stagger for smoother U2U
+                        }, i * 0.08); // Reduced stagger for smoother HBAR
                     });
 
                     // Parallax scroll for the notification-like element with improved smoothness
@@ -197,7 +197,7 @@ const FinalPage = () => {
     const lastrefisInView = useInView(lastref, { margin: "-100px 0px" });
 
     return (
-        <div className=' w-full bg-[#fffafa] z-10 overU2U-hidden relative'>
+        <div className=' w-full bg-[#fffafa] z-10 overHBAR-hidden relative'>
             {/** Floating Balls */}
             <div ref={(el) => (ballRefs.current[0] = el)}
                 className={'h-22 w-22 md:h-35 md:w-35 bg-white shadow-xl absolute z-50 rounded-full flex items-center justify-center top-[130vh] left-[80%]'}

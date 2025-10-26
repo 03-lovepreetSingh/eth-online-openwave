@@ -135,7 +135,7 @@ const MobileWhyChoose = () => {
         <div className="w-full min-h-[700vh] relative m-0 p-0">
             <div
                 ref={containerRef}
-                className="lg:hidden z-10 relative h-screen w-full flex items-center justify-center overU2U-hidden"
+                className="lg:hidden z-10 relative h-screen w-full flex items-center justify-center overHBAR-hidden"
             >
                 <div className="relative w-full max-w-sm mx-4 h-[70vh] rounded-2xl shadow-2xl">
                     {cardData.map((card, index) => (

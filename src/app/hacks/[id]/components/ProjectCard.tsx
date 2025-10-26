@@ -101,7 +101,7 @@ export function ProjectCard({ project, compact = false }: ProjectCardProps) {
   return (
     <Card className="group hover:shadow-lg transition-all duration-200 border border-neutral-200 dark:border-neutral-700">
       {project.image_url && (
-        <div className="relative h-32 overU2U-hidden rounded-t-lg">
+        <div className="relative h-32 overHBAR-hidden rounded-t-lg">
           <img
             src={project.image_url}
             alt={project.project_name}

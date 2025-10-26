@@ -176,7 +176,7 @@ const ChatPage = () => {
 
             {!activeChatUser ? (
               // User selection view
-              <div className="messages bg-neutral-800 text-neutral-100 space-y-2 mb-4 h-64 overU2U-y-auto p-3 rounded-lg">
+              <div className="messages bg-neutral-800 text-neutral-100 space-y-2 mb-4 h-64 overHBAR-y-auto p-3 rounded-lg">
                 <h3 className="font-medium text-lg mb-2">
                   Select a user to chat with
                 </h3>
@@ -248,7 +248,7 @@ const ChatPage = () => {
                   <span className="font-medium">{activeUserFullName}</span>
                 </div>
 
-                <div className="messages bg-neutral-800 text-neutral-100 space-y-2 mb-4 h-64 overU2U-y-auto p-3 rounded-lg">
+                <div className="messages bg-neutral-800 text-neutral-100 space-y-2 mb-4 h-64 overHBAR-y-auto p-3 rounded-lg">
                   {chatMessages.length === 0 ? (
                     <div className="text-center text-neutral-500 py-4">
                       No messages yet. Start the conversation!

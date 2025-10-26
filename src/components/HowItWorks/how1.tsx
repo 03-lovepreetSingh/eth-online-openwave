@@ -40,14 +40,14 @@ export default function How1() {
         <div className="relative z-50">
           {/* Mobile Slider */}
           <div className="md:hidden">
-            <div className="overU2U-hidden">
+            <div className="overHBAR-hidden">
               <div
                 className="flex transition-transform duration-300 ease-in-out"
                 style={{ transform: `translateX(-${currentSlide * 100}%)` }}
               >
                 {/* Step 01 */}
                 <div className="w-full flex-shrink-0 px-4">
-                  <div className="bg-neutral-900 rounded-3xl p-8 relative overU2U-hidden transform lg:-rotate-12 mx-4">
+                  <div className="bg-neutral-900 rounded-3xl p-8 relative overHBAR-hidden transform lg:-rotate-12 mx-4">
                     <div className="mb-6">
                       <h3 className="text-6xl font-bold mb-2">
                         01<span className="text-green-400">*</span>
@@ -87,7 +87,7 @@ export default function How1() {
 
                 {/* Step 03 */}
                 <div className="w-full flex-shrink-0 px-4">
-                  <div className="bg-neutral-900 rounded-3xl p-8 relative overU2U-hidden transform lg:rotate-12 mx-4">
+                  <div className="bg-neutral-900 rounded-3xl p-8 relative overHBAR-hidden transform lg:rotate-12 mx-4">
                     <div className="mb-6">
                       <h3 className="text-6xl font-bold mb-2">
                         03<span className="text-green-400">*</span>
@@ -148,7 +148,7 @@ export default function How1() {
           {/* Desktop Grid */}
           <div className="hidden md:grid grid-cols-3 gap-8">
             {/* Step 01 */}
-            <div className="bg-neutral-900 mx-3 rounded-3xl p-8 relative overU2U-hidden transform lg:-rotate-12">
+            <div className="bg-neutral-900 mx-3 rounded-3xl p-8 relative overHBAR-hidden transform lg:-rotate-12">
               <div className="mb-6">
                 <h3 className="text-6xl font-bold mb-2">
                   01<span className="text-green-400">*</span>
@@ -184,7 +184,7 @@ export default function How1() {
             </div>
 
             {/* Step 03 */}
-            <div className="bg-neutral-900 mx-3 rounded-3xl p-8 relative overU2U-hidden transform lg:rotate-12">
+            <div className="bg-neutral-900 mx-3 rounded-3xl p-8 relative overHBAR-hidden transform lg:rotate-12">
               <div className="mb-6">
                 <h3 className="text-6xl font-bold mb-2">
                   03<span className="text-green-400">*</span>

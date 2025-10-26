@@ -2,26 +2,26 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_vpc" "U2U_vpc" {
+resource "aws_vpc" "HBAR_vpc" {
   cidr_block = "10.0.0.0/16"
 
   tags = {
-    Name = "U2U-vpc"
+    Name = "HBAR-vpc"
   }
 }
 
-resource "aws_subnet" "U2U_subnet" {
-  vpc_id            = aws_vpc.U2U_vpc.id
+resource "aws_subnet" "HBAR_subnet" {
+  vpc_id            = aws_vpc.HBAR_vpc.id
   cidr_block        = "10.0.1.0/24"
   availability_zone = "us-east-1a"
 
   tags = {
-    Name = "U2U-subnet"
+    Name = "HBAR-subnet"
   }
 }
 
-resource "aws_security_group" "U2U_sg" {
-  vpc_id = aws_vpc.U2U_vpc.id
+resource "aws_security_group" "HBAR_sg" {
+  vpc_id = aws_vpc.HBAR_vpc.id
 
   ingress {
     from_port   = 9650
@@ -45,17 +45,17 @@ resource "aws_security_group" "U2U_sg" {
   }
 
   tags = {
-    Name = "U2U-sg"
+    Name = "HBAR-sg"
   }
 }
 
-resource "aws_instance" "U2U_validator" {
+resource "aws_instance" "HBAR_validator" {
   ami           = "ami-0c55b159cbfafe1f0" # Replace with a valid AMI ID
   instance_type = "t2.micro"
-  subnet_id     = aws_subnet.U2U_subnet.id
-  security_groups = [aws_security_group.U2U_sg.name]
+  subnet_id     = aws_subnet.HBAR_subnet.id
+  security_groups = [aws_security_group.HBAR_sg.name]
 
   tags = {
-    Name = "U2U-validator"
+    Name = "HBAR-validator"
   }
 }

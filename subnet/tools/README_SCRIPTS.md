@@ -1,13 +1,13 @@
 # README for Scripts
 
-This document provides an overview of the scripts available in the `nextjs-U2U-subnet` project, detailing their purpose and usage.
+This document provides an overview of the scripts available in the `nextjs-HBAR-subnet` project, detailing their purpose and usage.
 
 ## Scripts Overview
 
 ### 1. Subnet Scripts
 
 - **create_subnet.sh**
-  - **Purpose**: Automates the process of creating a new U2U subnet.
+  - **Purpose**: Automates the process of creating a new HBAR subnet.
   - **Usage**: Run this script to initialize a subnet with the specified configuration. Ensure that the necessary environment variables and configurations are set before execution.
 
 - **deploy_chain.sh**
@@ -17,8 +17,8 @@ This document provides an overview of the scripts available in the `nextjs-U2U-s
 ### 2. Fund and Transaction Scripts
 
 - **fund_pchain.ts**
-  - **Purpose**: Funds the P-Chain with U2U to facilitate transaction fees and subnet creation.
-  - **Usage**: Run this TypeScript script to transfer U2U to the P-Chain. Ensure that your wallet is connected and has sufficient U2U balance.
+  - **Purpose**: Funds the P-Chain with HBAR to facilitate transaction fees and subnet creation.
+  - **Usage**: Run this TypeScript script to transfer HBAR to the P-Chain. Ensure that your wallet is connected and has sufficient HBAR balance.
 
 - **sign_tx.ts**
   - **Purpose**: Handles the signing of transactions to ensure they are valid before being sent to the network.
@@ -27,13 +27,13 @@ This document provides an overview of the scripts available in the `nextjs-U2U-s
 ### 3. Infrastructure Scripts
 
 - **docker-compose.yml**
-  - **Purpose**: Defines the Docker configuration for running the U2U node and associated services.
-  - **Usage**: Use Docker Compose to spin up the necessary services for the U2U network. This file contains the configuration for the node and any dependencies.
+  - **Purpose**: Defines the Docker configuration for running the HBAR node and associated services.
+  - **Usage**: Use Docker Compose to spin up the necessary services for the HBAR network. This file contains the configuration for the node and any dependencies.
 
 - **main.tf**
-  - **Purpose**: Sets up the infrastructure needed for deploying the U2U subnet and its components using Terraform.
+  - **Purpose**: Sets up the infrastructure needed for deploying the HBAR subnet and its components using Terraform.
   - **Usage**: Run this Terraform configuration to provision the required resources for your subnet deployment.
 
 ## Conclusion
 
-These scripts are essential for managing the lifecycle of your U2U subnet and its associated blockchains. Ensure to follow the usage instructions carefully to avoid any issues during execution. For further details on each script, refer to the specific script files in the project.
+These scripts are essential for managing the lifecycle of your HBAR subnet and its associated blockchains. Ensure to follow the usage instructions carefully to avoid any issues during execution. For further details on each script, refer to the specific script files in the project.
